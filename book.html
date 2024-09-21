@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+/>
+    <link rel="stylesheet" href="book.css">
+    <link rel="icon" type="image/png" href="quill-drawing-a-line.png">
+</head>
+<body>
+    <div class="navbar">
+        <h1><a href="https://openlibrary.org"target="_blank" onclick="window.location.href=this.href;">> BookSky</a></h1>
+    </div>
+    <center>
+    <div class="container">
+        <div class="book-container">
+            <h1>Rich Dad Poor Dad</h1>
+            <h5> Robert Kiyosaki and Sharon Lechter </h5>
+            <p>Robert's story of growing up with two dads — his real father and the father of his best friend, his rich dad — and the ways in which both men shaped his thoughts about money and investing</p>
+            <button onclick="dlt(event)">Delete</button>
+        </div>
+    </div>
+</center>
+    <div class="overlay"></div>
+    <div class="popupbox">
+        <h2>Add Books</h2>
+        <form>
+            <input type="text"  placeholder="Book Title" id="booktitle">
+            <input type="text"   placeholder="Book Author" id="author">
+            <textarea placeholder="Short Description"  id="description"></textarea>
+            <button id="addbtn"> Add </button>
+            <button id="closebtn"> Close</button>
+        </form>
+    </div>
+
+    <button class="addbutton" id="addpopup" onclick="more()">+</button>
+   
+    <div class="background-text">
+        <h6>Books are the gateway to infinite worlds, offering knowledge, adventure, and inspiration. They transport us to distant lands, introduce us to fascinating characters, and teach us valuable lessons about life and the universe. Through reading, we can expand our horizons, develop our critical thinking skills, and gain a deeper understanding of ourselves and others.
+
+            Books have the power to ignite our imaginations, spark our curiosity, and challenge our preconceptions. They can be sources of comfort, solace, and motivation, helping us to navigate the complexities of life with greater resilience and purpose. Whether we are seeking escapism, enlightenment, or simply a good story, books offer something for everyone.
+            
+            In a world that is increasingly fast-paced and technology-driven, books provide a much-needed respite from the constant bombardment of information. They allow us to slow down, reflect, and connect with something larger than ourselves. By immersing ourselves in the worlds of others, we can gain a greater appreciation for the diversity of human experience and develop a sense of empathy and compassion.
+            
+            Reading books is not just a passive activity; it is an active engagement with the mind and the world. It requires concentration, critical thinking, and imagination. By exercising these cognitive skills, we can improve our memory, enhance our problem-solving abilities, and increase our overall intelligence. Moreover, reading can help us to develop a love of learning and a lifelong curiosity about the world around us.</h6>
+      </div>
+
+    <script src="book.js"></script>
+</body>
+</html>
